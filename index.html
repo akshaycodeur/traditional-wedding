@@ -1,12 +1,116 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documents</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Full page scroll -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/elansx/Slider/slider.css">
+
+    <style>
+        #sectionOne{ background-image: url('/assets/background1.jpeg');}
+        #sectionTwo{ background-image: url('/assets/background2.png');}
+    .background-full{background-size: cover;background-repeat: no-repeat;}
+    .event-card{background-image: url('/assets/goldframe.webp'); background-size: contain; background-repeat: no-repeat;background-position: center;min-height: 400px; padding: 5rem;align-items: center; justify-content: center; display: grid;position: relative;}
+    .events{ display: grid; grid-template-columns: 1fr 1fr; text-align: center;}
+    .theme {text-align: center;margin-top: 2rem;}
+    @media only screen and (max-width: 375px) {
+  .event-card{background-size: 90vw 60vh;}
+  .events{grid-template-columns: 1fr;}
+}
+
+.flower img{ max-width: 250px}
+.flower{position: absolute;}
+.flower.flower-left{ margin-left: -9rem; margin-top: 8rem}
+.flower.flower-right{ rotate: 13deg; right: -6.25rem}
+.date img{ width: 80px}
+.date{ position: absolute; top: 11vh; left: 13vw}
+    </style>
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div id="wholepage">
+     
+        <section id="sectionOne" class="background-full">
+        
+            <div class="page">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-10">
+                            <h1 class="mainHeading">Tanya and Pratik</h1>
+                            <h4 class="subheading">ARE FINALLY TYING THE KNOT!</h4>
+                            <div class="wedding-date">
+                                <div class="month"><h4>OCT</h4></div>
+                                <div class="date">
+                                    <div class="date1">04</div>
+                                    <div class="date1">05</div>
+                                </div>
+                                <div class="year"><h4>2022</h4></div>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="joinus">
+                                <p>Join us in celebrating our friendship, love, squabbles and laughter as we start an exciting new chapter</p>
+                            </div>
+                        </div>
+                        <div class="venueMain"><p>Hotel Malas | St Josephs Church, Panchgani</p></div>
+                    </div>
+
+                </div>  
+            </div>  
+            
+        </section>
+
+        <section id="sectionTwo" class="background-full">
+            <div class="date">
+                <img src="/assets/4th.png" alt="">
+            </div>
+            <div class="page">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-6 event-card">
+                            <div class="day-one-events ">
+                                <div class="events">
+                                    <div class="event event1">
+                                        <h3>ROCE</h3>
+                                        <p>4pm, Circular Garden</p>
+                                    </div>
+                                    <div class="event event2">
+                                        <h3>MEHENDI</h3>
+                                        <p>5.30pm, Cafe</p>
+                                    </div>
+                                </div>
+                                <div class="theme">
+                                    <h4>Theme: Goan Carnival</h4>
+                                    <p>Dress colourful and comfortable</p>
+                                </div>
+                            </div>
+                            <div class="flower flower-left"><img src="/assets/dayoneflower.webp" alt=""></div>
+                            <div class="flower flower-right"><img src="/assets/dayoneflower2.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+            
+        </section>
+        
+        
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/gh/elansx/Slider/slider.js"></script>
+    <script>
+        new WholePageSlider({
+            containerId: "wholepage"
+        })
+    </script>
+
+  </body>
 </html>
