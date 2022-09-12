@@ -11,26 +11,77 @@
     <!-- Full page scroll -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/elansx/Slider/slider.css">
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <style>
-        #sectionOne{ background-image: url('/assets/background1.jpeg');}
-        #sectionTwo{ background-image: url('/assets/background2.png');}
-    .background-full{background-size: cover;background-repeat: no-repeat;}
-    .event-card{background-image: url('/assets/goldframe.webp'); background-size: contain; background-repeat: no-repeat;background-position: center;min-height: 400px; padding: 5rem;align-items: center; justify-content: center; display: grid;position: relative;}
-    .events{ display: grid; grid-template-columns: 1fr 1fr; text-align: center;}
-    .theme {text-align: center;margin-top: 2rem;}
-    @media only screen and (max-width: 375px) {
-  .event-card{background-size: 90vw 60vh;}
-  .events{grid-template-columns: 1fr;}
+    :root {
+  --mainbrown:#72541A;
 }
 
-.flower img{ max-width: 250px}
-.flower{position: absolute;}
-.flower.flower-left{ margin-left: -9rem; margin-top: 8rem}
-.flower.flower-right{ rotate: 13deg; right: -6.25rem}
-.date img{ width: 80px}
-.date{ position: absolute; top: 11vh; left: 13vw}
+        #sectionOne{ background-image: url('assets/background1.png');}
+        #sectionTwo{ background-image: url('assets/background2.png');}
+        #sectionThree{ background-image: url('assets/background3.webp');}
+        #sectionFour{ background-image: url('assets/background4.png');}
+        #sectionFive{ background-image: url('assets/background5.png');}
+    .background-full{background-size: cover;background-repeat: no-repeat;}
+    .event-card{background-image: url('assets/goldframe.webp'); background-size: contain; background-repeat: no-repeat;background-position: center;min-height: 400px; padding: 5rem;align-items: center; justify-content: center; display: grid;position: relative;}
+    .event-card--gold{background-image: url('assets/goldenframe.webp'); background-size: contain; background-repeat: no-repeat;background-position: center;min-height: 400px; padding: 5rem;align-items: center; justify-content: center; display: grid;position: relative;}
+    .events{ display: grid; grid-template-columns: 1fr 1fr; text-align: center;align-items: baseline;}
+    .theme {text-align: center;margin-top: 2rem;}
+    @media only screen and (max-width: 400px) {
+  .event-card{background-size: 90vw 400px!important;}
+  .event-card--gold{background-size: 90vw 400px!important;}
+  .events{grid-template-columns: 1fr;}
+  .flower img{ max-width: 150px!important;}
+  .joinus{ margin-top: 14rem!important; color: var(--mainbrown)}
+
+  .mainHeading img {
+    width: 70vw!important;
+    margin-bottom: 1rem;
+}
+
+}
+
+    .flower img{ max-width: 250px; max-height: 350px;}
+    .flower{position: absolute;}
+    .flower.flower-left{ margin-left: -9rem; margin-top: 8rem}
+    .flower.flower-right{ rotate: 13deg; right: -6.25rem}
+    .date img{ width: 80px}
+    .date{ position: absolute; top: 11vh; left: 13vw}
+    .flower.hero-flower-right{ right: -3rem; bottom: -5rem}
+    .flower.hero-flower-right2{ right: -3rem; bottom: 4rem}
+    .flower.hero-flower-right3{ right: -3rem; bottom: -5rem}
+    .flower.hero-flower-right3{ right: 5rem; bottom: -10rem; rotate: -60deg}
+    .flower.hero-flower-left{ left: -3rem; bottom: -5rem}
+    .flower.hero-flower-left2{ left: -3rem; bottom: 4rem}
+    .flower.hero-flower-left3{ left: -3rem; bottom: -5rem}
+    .flower.hero-flower-left3{ left: 5rem; bottom: -10rem; rotate: 60deg}
+    .flowers-left img{-webkit-transform: scaleX(-1);
+  transform: scaleX(-1);}
+
+  /* Hero Styling */
+  .mainHeading img{text-align: center;width: 30vw;}
+  .mainHeading{text-align: center;}
+.subheading{color: var(--mainbrown);text-align: center;}
+.wedding-date{ margin:2rem 0;text-align: center; display: grid; grid-template-columns: 1fr 1fr 1fr; max-width: 300px; margin-left: auto; margin-right: auto;align-items: center;color: #72541A;}
+.date1{ border-right: 1px solid var(--mainbrown); border-left: 1px solid var(--mainbrown)}
+.joinus:before{ content: ''; display: block; height: 100%; width: 100%; background: url(assets/knotting.png); position: absolute; top: 0; left: 0; background-repeat: no-repeat; background-position: center; background-size: contain}
+.joinus{ margin-top: 3rem; color: var(--mainbrown)}
+.venueMain{color: var(--mainbrown);}
+
+.flower.flower-left2{ margin-left: -2rem; margin-top: 18rem}
+.bird-right{-webkit-transform: scaleX(-1);
+  transform: scaleX(-1);right: -6rem;}
+  .solo-event{text-align: center;}
+
+  .slide4flower{ left: -6rem; top: 3rem}
+  .slide4couple{ right: -5rem; bottom: 0rem}
+
+  .finalslide{ position: absolute; left: -37rem; z-index: -1; bottom: -43rem; scale: .9}
+
+  .finalflowers{ position: absolute; right: -10rem; top: -14rem; scale: 1.1}
     </style>
-    <title>Hello, world!</title>
+    <title>Pratik Weds Tanya</title>
   </head>
   <body>
     <div id="wholepage">
@@ -41,11 +92,11 @@
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-md-10">
-                            <h1 class="mainHeading">Tanya and Pratik</h1>
+                            <div class="mainHeading"><img src="assets/tanyaandpratik.png" alt=""></div>
                             <h4 class="subheading">ARE FINALLY TYING THE KNOT!</h4>
                             <div class="wedding-date">
                                 <div class="month"><h4>OCT</h4></div>
-                                <div class="date">
+                                <div class="date-main">
                                     <div class="date1">04</div>
                                     <div class="date1">05</div>
                                 </div>
@@ -59,15 +110,28 @@
                         </div>
                         <div class="venueMain"><p>Hotel Malas | St Josephs Church, Panchgani</p></div>
                     </div>
-
                 </div>  
+                <div class="flowers-right">
+                    <div class="flower hero-flower-right2"><img src="assets/hero-flower3.webp" alt=""></div>
+                    <div class="flower hero-flower-right"><img src="assets/hero-flower3.webp" alt=""></div>
+                    <div class="flower hero-flower-right3"><img src="assets/hero-flower3.webp" alt=""></div>
+                    <div class="flower hero-flower-right2"><img src="assets/hero-flower2.webp" alt=""></div>
+                    <div class="flower hero-flower-right"><img src="assets/p1-flower-left-bot.webp" alt=""></div>
+                </div>
+                <div class="flowers-left">
+                    <div class="flower hero-flower-left"><img src="assets/hero-flower3.webp" alt=""></div>
+                    <div class="flower hero-flower-left"><img src="assets/hero-flower3.webp" alt=""></div>
+                    <div class="flower hero-flower-left3"><img src="assets/hero-flower3.webp" alt=""></div>
+                    <div class="flower hero-flower-left2"><img src="assets/hero-flower2.webp" alt=""></div>
+                    <div class="flower hero-flower-left"><img src="assets/p1-flower-left-bot.webp" alt=""></div>
+                </div>
             </div>  
             
         </section>
 
         <section id="sectionTwo" class="background-full">
             <div class="date">
-                <img src="/assets/4th.png" alt="">
+                <img src="assets/4th.png" alt="">
             </div>
             <div class="page">
                 <div class="container">
@@ -89,11 +153,115 @@
                                     <p>Dress colourful and comfortable</p>
                                 </div>
                             </div>
-                            <div class="flower flower-left"><img src="/assets/dayoneflower.webp" alt=""></div>
-                            <div class="flower flower-right"><img src="/assets/dayoneflower2.png" alt=""></div>
+                            <div class="flower flower-left"><img src="assets/dayoneflower.webp" alt=""></div>
+                            <div class="flower flower-right"><img src="assets/dayoneflower2.png" alt=""></div>
+                            <img src="assets/" alt="">
                         </div>
                     </div>
                 </div>
+            </div>  
+            
+        </section>
+
+        <section id="sectionThree" class="background-full">
+            <div class="date">
+                <img src="assets/5th.png" alt="">
+            </div>
+            <div class="page">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-6 event-card">
+                            <div class="day-one-events ">
+                                <div class="solo-event">
+                                    <div class="event event1">
+                                        <h3>HALDI CEREMONY</h3>
+                                        <p>6.45am, Circular Garden</p>
+                                    </div>
+                                </div>
+                                <div class="theme">
+                                    <h4>Theme: Sunrise</h4>
+                                    <p>Yellow, white & gold, Indian wear if possible</p>
+                                </div>
+                            </div>
+                            <div class="flower flower-left2"><img src="assets/daytwoflower.webp" alt="" style=""></div>
+                            <div class="flower bird-right"><img src="assets/daytwobird.png" alt=""></div>
+                            <img src="assets/" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>  
+            
+        </section>
+
+        <section id="sectionFour" class="background-full">
+            <div class="date">
+                <img src="assets/5th.png" alt="">
+            </div>
+            <div class="page">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-6 event-card--gold">
+                            <div class="day-one-events ">
+                                <div class="solo-event">
+                                    <div class="event event1">
+                                        <h3>CHRISTIAN WEDDING</h3>
+                                        <p>9.15am, St Josephs Church</p>
+                                    </div>
+                                    <div class="event  mt-4">
+                                        <h3>CELEBRATORY LUNCH</h3>
+                                        <p>9.15am, Main Lawn</p>
+                                    </div>
+                                </div>
+                                <div class="theme">
+                                    <h4>Theme: Pastels & Soft Florals</h4>
+                                    <p>Suggested attire is light colours</p>
+                                </div>
+                            </div>
+                            <div class="flower slide4flower"><img src="assets/slide4flower.webp" alt="" style=""></div>
+                            <div class="flower slide4couple"><img src="assets/slide4couple.webp" alt=""></div>
+                            <img src="assets/" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>  
+            
+        </section>
+
+        <section id="sectionFive" class="background-full">
+            <div class="date">
+                <img src="assets/5th.png" alt="">
+            </div>
+            <div class="page">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-6 event-card--gold">
+                            <div class="day-one-events ">
+                                <div class="events">
+                                    <div class="event event1">
+                                        <h3>VARMALA</h3>
+                                        <p>4.30pm, Main Lawn</p>
+                                    </div>
+                                    <div class="event  mt-4">
+                                        <h3>PHERAS</h3>
+                                        <p>5.00pm, Private Garden</p>
+                                    </div>
+                                </div>
+                                <div class="solo-event">
+                                    <div class="event event1">
+                                        <h3>DINNER PARTY</h3>
+                                        <p>8.00pm, Main Lawn</p>
+                                    </div>
+                                </div>
+                                <div class="theme">
+                                    <h4>Theme: Fireflies at Sunset</h4>
+                                    <p>Wear traditional or Indian wear</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="finalslide"><img src="assets/finalslide.png" alt=""></div>
+                <div class="finalflowers"><img src="assets/finalflowers.png" alt=""></div>
             </div>  
             
         </section>
@@ -112,5 +280,16 @@
         })
     </script>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+
   </body>
 </html>
+
+
+<!-- 
+inurl:https://www.wedding.developmentstage.co
+
+ -->
